@@ -1,0 +1,88 @@
+/* Light Theme (default) */
+body {
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+    transition: background 0.3s;
+  }
+  
+  .theme-toggle {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    width: 300px;
+    transition: background 0.3s;
+  }
+  
+  #display {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #eaeaea;
+    color: #000;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #f1f1f1;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #ddd;
+  }
+  
+  button.zero {
+    grid-column: span 2;
+  }
+  
+  /* Dark Theme */
+  body.dark {
+    background: #121212;
+  }
+  
+  body.dark .calculator {
+    background: #1e1e1e;
+    box-shadow: 0 5px 20px rgba(255,255,255,0.05);
+  }
+  
+  body.dark #display {
+    background: #333;
+    color: #fff;
+  }
+  
+  body.dark button {
+    background: #2c2c2c;
+    color: #fff;
+  }
+  
+  body.dark button:hover {
+    background: #444;
+  }
+  
